@@ -1,0 +1,15 @@
+name: Hello World
+
+on:
+  push: {branches: main}
+  pull_request: {branches: main}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest 
+    name: Install external repo
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install git+https://github.com/jayakart/apigeex-deployment-scripts.git
+      - run: npm list
+      - run: npm start
