@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/johnpapa/node-hello.git"
   },
+  "dependencies": {
+    "node-hello": "github:jayakart/apigeex-deployment-scripts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
